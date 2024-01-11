@@ -20,7 +20,7 @@ export async function POST(req: NextRequest) {
     // Initialize Pinecone client
     const pineconeClient = pinecone.initialize({
       apiKey: process.env.PINECONE_API_KEY,
-      environment: 'us-west1-gcp' // change this based on your Pinecone environment
+      environment: 'us-west1-gcp-free' // change this based on your Pinecone environment
     });
 
     // Create or connect to an existing index
